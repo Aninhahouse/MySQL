@@ -102,7 +102,7 @@ INSERT INTO tb_produtos(nome, quantidade, preco)
 VALUES("Sacola Verde", 1118, 0.50);
 
 -- Visualiza todos os dados da tabela tb_produtos
-SELECT * FROM tb_produtos;
+ SELECT * FROM tb_produtos;
 
  SHOW FULL COLUMNS FROM tb_produtos;
  

@@ -42,6 +42,7 @@ INSERT INTO tb_personagens (nome, poder_ataque, poder_defesa, nivel, id_classe) 
     ('Voldemort', 2200, 1500, 7, 3),
     ('Capitao America', 2400, 1200, 6, 5);
 
+SELECT * FROM tb_classes;
 SELECT * FROM tb_personagens;
 -- Mostra os ataques maior do que 2000
 SELECT * FROM tb_personagens WHERE poder_ataque > 2000;
