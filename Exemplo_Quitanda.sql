@@ -34,8 +34,8 @@ VALUES ("Ovos");
 INSERT INTO tb_categorias (descricao)
 VALUES ("outros");
 
--- Lista todos os dados da tabela tb_categorias
-SELECT * FROM tb_categorias;
+
+
 
 -- Criar a Tabela tb_produtos
 CREATE TABLE tb_produtos(
