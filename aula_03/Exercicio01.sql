@@ -10,7 +10,7 @@ CREATE TABLE tb_classes (
 );
 
 INSERT INTO tb_classes (nome, tipo) VALUES
-	('Super Força', 'Super força, voo e visão de raio-x'),
+    ('Super Força', 'Super força, voo e visão de raio-x'),
     ('Arqueiro', 'Ataque com arco e flecha'),
     ('Bruxo', 'Ataque com magia'),
     ('Velocidade e Voo', 'Velocidade e ataque com raios'),
