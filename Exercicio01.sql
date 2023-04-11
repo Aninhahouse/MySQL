@@ -1,9 +1,7 @@
 CREATE DATABASE db_generation_game_online;
 
--- Seleciona o banco de dados criado
 USE db_generation_game_online;
 
--- Criação da tabela tb_classes
 CREATE TABLE tb_classes (
     id INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(50) NOT NULL,
@@ -11,7 +9,6 @@ CREATE TABLE tb_classes (
     PRIMARY KEY (id)
 );
 
--- Inserção de dados na tabela tb_classes
 INSERT INTO tb_classes (nome, tipo) VALUES
 	('Super Força', 'Super força, voo e visão de raio-x'),
     ('Arqueiro', 'Ataque com arco e flecha'),
@@ -19,7 +16,6 @@ INSERT INTO tb_classes (nome, tipo) VALUES
     ('Velocidade e Voo', 'Velocidade e ataque com raios'),
     ('Resistência', 'Super força, aguenta dor');
 
--- Criação da tabela tb_personagens
 CREATE TABLE tb_personagens (
     id INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(50) NOT NULL,
@@ -31,7 +27,7 @@ CREATE TABLE tb_personagens (
     FOREIGN KEY (id_classe) REFERENCES tb_classes(id)
 );
 
--- Inserção de dados na tabela tb_personagens
+
 INSERT INTO tb_personagens (nome, poder_ataque, poder_defesa, nivel, id_classe) VALUES
     ('Superman', 3000, 2500, 10, 1),
     ('Oliver Queen', 2500, 2000, 10, 2),
